@@ -1,3 +1,37 @@
+2023-01-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 1.81.0-1
+
+	* inst/include/boost/math/tools/config.hpp: Comment-out 'warning'
+	message as CRAN Policy would prefer not to see these
+	* inst/include/boost/multiprecision/detail/standalone_config.hpp: Idem
+	* inst/include/boost/spirit/home/x3.hpp: Idem (for four lines)
+
+2022-12-29  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/include/boost/core/snprintf.hpp: Added
+	* .../lexical_cast/detail/converter_lexical_streams.hpp: Used here
+	* .../core/lightweight_test.hpp: Use snprintf
+	* .../core/type_name.hpp: Idem
+	* .../interprocess/detail/win32_api.hpp: Idem
+	* .../numeric/odeint/integrate/max_step_checker.hpp: Idem
+	* .../test/imp/debug.ipp: Idem
+	* .../utils/setcolor.hpp: Idem
+
+2022-12-15  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/include/boost/*: Upgraded to Boost 1.81, as usual with two
+	patch sets from CRAN demands on file path length and diagnostics
+
+	* README.md: Updated package list for 1.81
+	* DESCRIPTION (Description): Idem
+
+	* local/scripts/CreateBoost.sh: Update for 1.81.0, added url
+
+2022-10-31  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/workflows/ci.yaml (jobs): Update to actions/checkout@v3
+
 2021-12-14  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 1.78.0-0
